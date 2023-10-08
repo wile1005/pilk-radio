@@ -1,0 +1,58 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,p,a,marquee {
+	color: #fdd384;
+  text-align: center;
+}                                                                                                                                                                             
+
+a:hover {
+	color: #fdd384;
+}                                                                                                                                                                             
+
+h1 {
+  margin-top: 2em;
+}
+
+/* Hide the default audio controls */                                               
+/* audio::-webkit-media-controls-panel,                                                
+audio::-webkit-media-controls-panel-enclosure {                                     
+	display: none !important;         
+	width: 0 !important;              
+}  */                                   
+body {
+	width: 100vw;
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: hidden;
+ 	background: #1d1d1d;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.marquee-container {
+  overflow: hidden;
+}
+.marquee-text {
+  white-space: nowrap; /* Prevent text from wrapping */
+  animation: marquee 10s linear infinite; /* Adjust the duration and timing function as needed */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%); /* Start offscreen to the right */
+  }
+  100% {
+    transform: translateX(-100%); /* Move offscreen to the left */
+  }
+}
+
+img {
+  max-width: 40%;
+  max-height: 40%;
+  cursor: pointer;
+}
