@@ -8,13 +8,18 @@
     <script src="player.js" defer></script>
 </head>
 <body>
-    <h1>PILK RADIO! 🐈</h1>
-    <h2>NOW PLAYING BURRENYAA TOP 100</h2>
-    <div class="marquee-container">
-      <p class="marquee-text" id="prod"></p>
+    <div id="musicPlayer">
+        <h1>PILK RADIO! 🐈</h1>
+        <h2>NOW PLAYING BURRENYAA TOP 100</h2>
+        <div class="marquee-container">
+          <p class="marquee-text" id="prod"></p>
+        </div>
+        <img id="necoarc" src="start.png">
+        <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1" onchange="updateVolume()">
+        <p><a href="mailto:pilk@necoarc.org">pilk@necoarc.org</a></p>
     </div>
-    <img id="necoarc" src="start.png">
-    <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1" onchange="updateVolume()">
-    <p><a href="mailto:pilk@necoarc.org">pilk@necoarc.org</a></p>
+    <div id="chat">
+        <?php include "chat/chat.php" ?>
+    </div>
 </body>
 </html>
