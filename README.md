@@ -1,6 +1,6 @@
 # PILK RADIO!
 This is a php/js website that plays a random audio file.
-It uses MariaDB to keep track of music, paths and original creators.
+It uses MariaDB to keep track of music/timestamp, paths and original creators.
 
 ## Importing Music
 yt2sql.sh is used to import audio and necessary metadata into the database.
